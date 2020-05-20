@@ -61,6 +61,6 @@ typings/
 package-lock.json
 
 dist
-build
+# build
 
 .idea

@@ -1,2 +1,5 @@
 # vue-chat-better
-chat draggable async
+
+vue、chat、draggable、async message.
+
+Coming soon...
