@@ -2,7 +2,8 @@
   <div class="sc-message--text template" :style="messageColors">
     <div class="arrow-left"></div>
     <slot :message="message" :messageColors="messageColors" :me="me">
-      <p>Default message.</p>
+      <p>Default message template: </p>
+      <p>{{ message.data.text }}</p>
     </slot>
   </div>
 </template>

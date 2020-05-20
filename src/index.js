@@ -1,13 +1,11 @@
 import Launcher from './Launcher.vue'
 import VTooltip from 'v-tooltip'
 
-const defaultComponentName = 'beautiful-chat'
+const defaultComponentName = 'vue-chat'
 
 const Plugin = {
   install (Vue, options = {}) {
-    /**
-     * Makes sure that plugin can be installed only once
-     */
+    
     if (this.installed) {
       return
     }
@@ -24,9 +22,7 @@ const Plugin = {
         Plugin.dynamicContainer = dynamicContainer
       }
     }
-    /**
-     * Sets custom component name (if provided)
-     */
+    
     Vue.component(this.componentName, Launcher)
     Vue.use(VTooltip)
   }

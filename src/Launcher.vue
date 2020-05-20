@@ -59,18 +59,6 @@ import openIcon from './assets/chat.svg'
 
 export default {
   props: {
-    isOpen: {
-      type: Boolean,
-      required: true
-    },
-    open: {
-      type: Function,
-      required: true
-    },
-    close: {
-      type: Function,
-      required: true
-    },
     onSetting: {
       type: Function,
       default: () =>{}
@@ -100,7 +88,8 @@ export default {
       default: () =>{}
     },
     title: {
-      type: String
+      type: String,
+      default: 'vue-chat-better 😋'
     },
     titleImageUrl: {
       type: [String, Object],
@@ -177,7 +166,8 @@ export default {
     return {
       closeIcon,
       firstTime: 0,
-      lastTime: 0
+      lastTime: 0,
+      isOpen: false
     }
   },
   computed: {
@@ -194,6 +184,12 @@ export default {
     };
   },
   methods: {
+    close() {
+      this.isOpen = false;
+    },
+    open() {
+      this.isOpen = true;
+    },
     sendMsg(message) {
       store.messageList = [...store.messageList, Object.assign({}, message, {id: Math.random()})]
     },
@@ -243,6 +239,7 @@ export default {
   height: 0;
   right: 25px;
   bottom: 25px;
+  z-index: 9999;
 }
 
 .sc-launcher {
@@ -257,6 +254,7 @@ export default {
   box-shadow: none;
   transition: box-shadow 0.2s ease-in-out;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .sc-launcher:before {
