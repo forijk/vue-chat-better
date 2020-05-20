@@ -1,2 +1,11 @@
 demo
 *.map
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+.*
+/src
+/build
+package-lock.json

@@ -1,8 +1,8 @@
 {
   "name": "vue-chat-better",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple and draggable Vue chat component.",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "repository": "https://github.com/forijk/vue-chat-better.git",
   "author": "Jason Yu<forjasonyu@gmail.com>",
   "license": "MIT",
