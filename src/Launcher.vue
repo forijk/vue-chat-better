@@ -167,14 +167,13 @@ export default {
       closeIcon,
       firstTime: 0,
       lastTime: 0,
-      isOpen: false,
-      alreadyExist: false
+      isOpen: false
     }
   },
   computed: {
     msgList() {
-      if (!this.alreadyExist) {
-        this.alreadyExist = true;
+      if (!this.$root.alreadyExist) {
+        this.$root.alreadyExist = true;
         return store.messageList = this.messageList.concat(store.messageList);
       }
       return store.messageList
