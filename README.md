@@ -2,7 +2,7 @@
 
 vue、chat、draggable、async message.
 
-[Online Demo]: https://forijk.github.io/
+[Online Demo](https://forijk.github.io/)
 
 Coming soon...
 
