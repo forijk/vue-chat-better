@@ -25,9 +25,9 @@ return format;
 };
 
 const messageList = [
-	{ type: 'system', id: 20, data: { text: new Date().format('yyyy-MM-dd hh:mm:ss') } },
-	{ type: 'text', author: `robot`, id: 1, data: { text: `what can I do for you?` } },
-    { type: 'text', author: `robot`, id: 21, data: { text: `And what about suggestions?` }, suggestions: ["Test Suggestions~", "Bread~", "Milk~"] }
+	{ type: 'system', id: 777, data: { text: new Date().format('yyyy-MM-dd hh:mm:ss') } },
+	{ type: 'text', author: `robot`, id: 888, data: { text: `what can I do for you?` } },
+    { type: 'text', author: `robot`, id: 999, data: { text: `And what about suggestions?` }, suggestions: ["Test Suggestions~", "Bread~", "Milk~"] }
 ]
 
 export default Vue.observable({ editMessage: null, isTyping: false, messageList });

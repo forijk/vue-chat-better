@@ -167,12 +167,17 @@ export default {
       closeIcon,
       firstTime: 0,
       lastTime: 0,
-      isOpen: false
+      isOpen: false,
+      alreadyExist: false
     }
   },
   computed: {
     msgList() {
-      return store.messageList = this.messageList.concat(store.messageList)
+      if (!this.alreadyExist) {
+        this.alreadyExist = true;
+        return store.messageList = this.messageList.concat(store.messageList);
+      }
+      return store.messageList
     }
   },
   mounted() {
