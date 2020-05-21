@@ -147,10 +147,7 @@ export default {
       alert('Test click ~~~');
     },
     like(id){
-      const m = this.messageList.findIndex(m => m.id === id);
-      var msg = this.messageList[m];
-      msg.liked = !msg.liked;
-      this.$set(this.messageList, m, msg);
+      alert('Test like ~~~');
     }
   },
   computed: {
@@ -162,9 +159,6 @@ export default {
     backgroundColor() {
       return this.chosenColor === 'dark' ? this.colors.messageList.bg : '#fff'
     }
-  },
-  mounted(){
-    this.messageList.forEach(x=>x.liked = false);
   }
 }
 </script>

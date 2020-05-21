@@ -1,6 +1,6 @@
 {
   "name": "vue-chat-better",
-  "version": "1.0.8",
+  "version": "1.1.1",
   "description": "A simple and draggable Vue chat component.",
   "main": "./src/index.js",
   "repository": "https://github.com/forijk/vue-chat-better.git",
@@ -13,6 +13,9 @@
     "draggable",
     "async",
     "robot",
+    "messages",
+    "templates",
+    "custom",
     "vue-js-chat"
   ],
   "devDependencies": {

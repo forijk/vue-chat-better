@@ -1,7 +1,9 @@
 <template>
   <div class="demo-test-area--wrapper" :style="{color: textColor}">
     <div class="demo-test-area--title">
-      <div class="demo-test-area--title-main" :style="{color: linkColor}">vue-chat-better demo</div>
+      <div class="demo-test-area--title-main" :style="{color: linkColor}">vue-chat-better demo
+        <div>Custom message templates, draggable window and async messages.</div>
+      </div>
       <div class="demo-test-area--title-sub">by <a :style="{color: linkColor}" href="https://github.com/forijk" target="_blank">forijk</a></div>
     </div>
     <form class="demo-test-area" @submit.prevent="_handleSubmit">
@@ -12,9 +14,9 @@
       <button class="demo-test-area--button" :style="{background: ctaColor, color: colors.sentMessage.text}"> Send Message! </button>
     </form>
     <p class="demo-test-area--info">
-      <a :style="{color: linkColor}" href="https://github.com/forijk/vue-chat-better">vue-chat-better</a> is a chat window that allows you to build and add custom live chat to your sites. It includes only the vue chat widget. There is no backend, and no communication system baked in.
+      <a :style="{color: linkColor}" href="https://github.com/forijk/vue-chat-better">vue-chat-better</a> is a simple and beautiful Vue chat component that allows you to build and add custom live chat to your sites. It includes only the vue chat widget and the view component. There is no backend, and no communication system baked in.
       <br />
-      It is based on <a :style="{color: linkColor}" href="https://github.com/mattmezza/vue-beautiful-chat">vue-beautiful-chat</a> and adds some features to it, like draggable window and async messages.
+      Features: Custom message templates, draggable window, async messages and so on.
       <br />
       <br />
       For instructions on how to use it click <a :style="{color: linkColor}" href="https://github.com/forijk/vue-chat-better">here</a>.
