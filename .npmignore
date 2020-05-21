@@ -6,6 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 node_modules/
 .*
-/src
+/dist
 /build
 package-lock.json

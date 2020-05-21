@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .sc-user-input--button-icon-wrapper {
   background: none;
   border: none;
@@ -35,18 +35,18 @@ export default {
   margin: 0px;
   outline: none;
   cursor: pointer;
-  &:focus{
-    outline: none;
-  }
-  svg {
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    align-self: center;
-    outline: none;
-    &:hover path{
-      filter: contrast(15%);
-    }
-  }
+}
+.sc-user-input--button-icon-wrapper:focus {
+  outline: none;
+}
+.sc-user-input--button-icon-wrapper svg {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  align-self: center;
+  outline: none;
+}
+.sc-user-input--button-icon-wrapper svg:hover path {
+  filter: contrast(15%);
 }
 </style>
