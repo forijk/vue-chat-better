@@ -2,7 +2,6 @@
   <div class="demo-test-area--wrapper" :style="{color: textColor}">
     <div class="demo-test-area--title">
       <div class="demo-test-area--title-main" :style="{color: linkColor}">vue-chat-better demo
-        <div>Custom message templates, draggable window and async messages.</div>
       </div>
       <div class="demo-test-area--title-sub">by <a :style="{color: linkColor}" href="https://github.com/forijk" target="_blank">forijk</a></div>
     </div>
@@ -87,7 +86,6 @@ export default {
 }
 
 .demo-test-area--title-sub {
-  padding-top: 10px;
   font-size: small;
 }
 
@@ -100,7 +98,6 @@ export default {
 }
 
 .demo-test-area--preamble {
-  padding: 20px 0px;
   text-align: center;
 }
 

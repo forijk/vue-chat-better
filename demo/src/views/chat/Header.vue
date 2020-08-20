@@ -40,7 +40,7 @@ export default {
   justify-content: space-between;
   max-width: 1100px;
   margin: auto;
-  padding: 40px 0px;
+  padding: 20px 0px;
 }
 
 .demo-header--title {
